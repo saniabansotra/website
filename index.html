@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <script src="https://kit.fontawesome.com/69ef59ac62.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
+    
+</head>
+<body>
+    <header>
+<div class="header_menu">
+    <div class="logo">
+        <img src="lion.png"alt="#webies" height="300"width="150">
+    </div>
+    <div class="menu_list" id="header_id">
+    <ul>
+        <li><a href="https://www.wikipedia.org">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Portfolio</a></li>
+
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul></div>
+    <a href="#" id="iconbar" ><i class="fa-solid fa-bars" onclick="responsive_menu()"></i></a>
+</div>
+<div class="header_content">
+    <h2> #WEBIES / THE WEB DEVELOPERS</h2>
+    <H1>SANIA BANSOTRA</H1>
+    <button><a href="https://www.wikipedia.org">Webies vlog</a></button>
+    <button><a href="https://www.wikipedia.org">Webies Blog</a></button>
+</div>
+    </header>
+    <br>
+    <div class="centerDiv">
+        <h2 id="mytext">My Youtube videos</h2><br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XTJLpZ-JHHU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <br><br>
+    <footer>
+        <h4>@Copyright TechChannel</h4>
+    </footer>
+
+
+    <script>
+        // console.log(mob_nav);
+        const responsive_menu=()=>{
+    var mob_nav=document.getElementById("header_id");
+if(mob_nav=="active"){
+    console.log(21);
+    mob_nav.className="menu_list";
+}
+else{ 
+    console.log(22);
+     mob_nav.className="menu_list active";
+}
+}
+
+    </script>
+
+</body>
+</html>
